@@ -32,6 +32,21 @@ public class Publisher {
         return (int) (id ^ (id >>> 32));
     }
 
+    @Override
+    public String toString() {
+        return "Publisher{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", books=" + books +
+                '}';
+    }
+
+    public Publisher()
+    {
+
+    }
+
     public Publisher(String name, String address) {
         this.name = name;
         this.address = address;
